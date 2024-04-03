@@ -1,8 +1,6 @@
-FROM python:3.10-alpine
+FROM python:3.10-slim
 
 WORKDIR /app
-
-RUN apk add --no-cache gcc musl-dev python3-dev libffi-dev g++ make
 
 COPY requirements.txt .
 
